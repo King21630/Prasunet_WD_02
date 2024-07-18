@@ -1,0 +1,91 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Stopwatch styles */
+.stopwatch {
+    background-color: #ffffff; /* White background for stopwatch */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 25px; /* Increased padding */
+}
+
+/* Heading styles */
+h1 {
+    color: #333; /* Dark text color for better readability */
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger font size for the heading */
+}
+
+/* Display styles */
+#display {
+    font-size: 2.8em; /* Larger font size for the time display */
+    margin-bottom: 15px;
+    color: #333; /* Dark text color */
+    background: linear-gradient(135deg, #ffb347, #ffcc33); /* Gradient background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow */
+}
+
+/* Controls container styles */
+.controls {
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+button {
+    padding: 12px 25px;
+    margin: 0 8px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary blue color */
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Button hover effects */
+button:hover:not(:disabled) {
+    background-color: #0056b3; /* Darker blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Disabled button styles */
+button:disabled {
+    background-color: #6c757d; /* Gray color for disabled buttons */
+    cursor: not-allowed;
+}
+
+/* Laps list styles */
+.laps {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+/* Lap item styles */
+.lap-item {
+    background-color: #f0f4f8; /* Light gray background */
+    border-radius: 6px;
+    margin-bottom: 8px;
+    padding: 10px;
+    font-size: 1em;
+    color: #333; /* Dark text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small shadow */
+}
